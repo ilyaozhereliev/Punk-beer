@@ -1,0 +1,43 @@
+@use '../../assets/styles/constants.scss' as *;
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 20px;
+  background: $color__grey;
+  border: none;
+  color: $color__black;
+}
+
+.button:hover {
+  background: $color__grey__40;
+  transition: all ease 0.2s;
+}
+
+.number {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 20px;
+  border-radius: 50px;
+  border: 1px solid $color__grey__60;
+}
+
+.page_link {
+  text-decoration: none;
+  color: $color__black;
+}
