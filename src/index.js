@@ -10,10 +10,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/mainPage" element={<MainPage />} />
+        <Route path="/" element={<MainPage />} />
       </Routes>
     </BrowserRouter>
-    <MainPage />
   </React.StrictMode>,
 );
 

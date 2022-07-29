@@ -10,7 +10,7 @@ const BeerCard = ({ beers, loading }) => {
     <>
       <div className={styles.container}>
         {beers.map((beer, i) => (
-          <div key={beer.name} className={styles.beer_card}>
+          <div key={beer.id} className={styles.beer_card}>
             <img className={styles.img} src={beer.image_url} alt="beer" />
             <div className={styles.bottom}>
               <h3 className={styles.name}>{beer.name}</h3>

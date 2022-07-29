@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Pagination.module.scss';
+
 const Pagination = ({ beersPerPage, totalBeers, paginate, nextPage, prevPage }) => {
   const pageNumbers = [];
 
@@ -16,9 +17,9 @@ const Pagination = ({ beersPerPage, totalBeers, paginate, nextPage, prevPage }) 
 
         {pageNumbers.map((number) => (
           <li className={styles.number} key={number}>
-            <a href="!#" className={styles.page_link} onClick={() => paginate(number)}>
+            <button className={styles.page_link} onClick={() => paginate(number)}>
               {number}
-            </a>
+            </button>
           </li>
         ))}
         <button className={styles.button} onClick={nextPage}>

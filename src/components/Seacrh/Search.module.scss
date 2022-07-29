@@ -1,0 +1,53 @@
+@use '../../assets/styles/constants.scss' as *;
+
+.header {
+  width: 100%;
+  height: 400px;
+  color: $color__black;
+  background: $color__white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.row {
+  font-size: 3rem;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  outline: 0;
+  border: 0;
+  height: 40px;
+  width: 500px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0 0.5rem;
+  font-size: 16px;
+}
+
+.search button {
+  outline: none;
+  border: none;
+  padding: 0 0.5rem;
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: $color__grey__40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: $color__green;
+  transition: all ease 0.5s;
+}
