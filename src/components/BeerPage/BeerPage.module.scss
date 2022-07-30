@@ -1,0 +1,54 @@
+@use '../../assets/styles/constants.scss' as *;
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+}
+
+.info {
+  margin-top: 50px;
+  position: relative;
+  max-width: 600px;
+  padding-left: 50px;
+  line-height: 2em;
+}
+
+.name {
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 1.2em;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.abv {
+  background-color: $color__grey__40;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  border-bottom-right-radius: 30px;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.food_pairing {
+  font-weight: bold;
+}
+
+.image {
+  width: 150px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
