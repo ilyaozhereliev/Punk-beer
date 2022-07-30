@@ -6,19 +6,24 @@ import styles from './BeerPage.module.scss';
 const BeerPage = () => {
   const { id } = useParams();
   const [beer, setBeer] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   const getBeer = async (search = '') => {
-    setLoading(true);
-
-    const response = await axios.get(`https://api.punkapi.com/v2/beers/${id}`);
-    setBeer(response.data[0]);
-    setLoading(false);
+    try {
+      const response = await axios.get(`https://api.punkapi.com/v2/beers/${id}`);
+      setBeer(response.data[0]);
+    } catch (e) {
+      setError(true);
+    }
   };
 
   useEffect(() => {
     getBeer();
   }, []);
+
+  if (error) {
+    return <h1>Такой странице нет</h1>;
+  }
 
   return (
     <div className={styles.container}>
