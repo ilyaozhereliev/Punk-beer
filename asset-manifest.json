@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Punk-beer/static/css/main.2be3a478.css",
+    "main.js": "/Punk-beer/static/js/main.a0f07da8.js",
+    "index.html": "/Punk-beer/index.html",
+    "main.2be3a478.css.map": "/Punk-beer/static/css/main.2be3a478.css.map",
+    "main.a0f07da8.js.map": "/Punk-beer/static/js/main.a0f07da8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2be3a478.css",
+    "static/js/main.a0f07da8.js"
+  ]
+}
