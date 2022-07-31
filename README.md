@@ -1,7 +1,7 @@
 # :beer: Punk-api beer SPA
 
 
-![Punk Beers - Google Chrome 2022-07-31 20-52-59 (online-video-cutter com)](https://user-images.githubusercontent.com/73027259/182039196-db1bc32a-d64b-47b5-b41c-33bdef393cfb.gif)
+![Punk Beers - Google Chrome 2022-07-31 20-52-59 (online-video-cutter com) (1)](https://user-images.githubusercontent.com/73027259/182039262-df8e3e2d-945c-4b31-bdc8-d5496462f96f.gif)
 
 
 ***
