@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 import styles from './BeerPage.module.scss';
 
 const BeerPage = () => {
@@ -8,7 +8,9 @@ const BeerPage = () => {
   const [beer, setBeer] = useState([]);
   const [error, setError] = useState(false);
 
-  const getBeer = async (search = '') => {
+  const navigate = useNavigate();
+
+  const getBeer = async () => {
     try {
       const response = await axios.get(`https://api.punkapi.com/v2/beers/${id}`);
       setBeer(response.data[0]);
@@ -22,11 +24,14 @@ const BeerPage = () => {
   }, []);
 
   if (error) {
-    return <h1>Такой странице нет</h1>;
+    return <h1>There is no such page</h1>;
   }
 
   return (
     <div className={styles.container}>
+      <button className={styles.back} onClick={() => navigate(-1)}>
+        <i className="fa fa-arrow-left" aria-hidden="true"></i>
+      </button>
       <img className={styles.image} src={beer.image_url} alt={beer.name} />
       <div className={styles.info}>
         <h1 className={styles.name}>{beer.name}</h1>
