@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './BeerCard.module.scss';
 import { useNavigate } from 'react-router-dom';
+import { baseName } from '../../utils';
 
 const maxDescriptionLength = 50;
 
@@ -8,7 +9,7 @@ const BeerCard = ({ beers, loading }) => {
   const navigate = useNavigate();
 
   const openCard = (id) => {
-    navigate(`/beer_page/${id}`);
+    navigate(`/${baseName}/beer_page/${id}`);
   };
 
   const substr = (str) => {
