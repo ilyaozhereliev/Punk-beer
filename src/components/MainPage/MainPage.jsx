@@ -6,6 +6,7 @@ import Search from '../Seacrh/Search';
 import styles from './MainPage.module.scss';
 
 const defaultBeersPerPage = 12;
+const totalBeers = 80;
 
 const MainPage = () => {
   const [beers, setBeers] = useState([]);
@@ -22,7 +23,7 @@ const MainPage = () => {
 
     const response = await axios.get('https://api.punkapi.com/v2/beers', {
       params: {
-        per_page: 80,
+        per_page: totalBeers,
         ...searchParams,
       },
     });

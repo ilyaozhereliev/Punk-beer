@@ -39,12 +39,7 @@ const BeerCard = ({ beers, loading }) => {
               openCard(beer.id);
             }}
           >
-            <img
-              className={styles.img}
-              onError={(e) => console.warn(e)}
-              src={beer.image_url}
-              alt="beer"
-            />
+            <img className={styles.img} src={beer.image_url} alt="beer" />
             <div className={styles.bottom}>
               <h3 className={styles.name}>{beer.name}</h3>
               <p className={styles.description}>{substr(beer.description)}</p>

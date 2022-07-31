@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Pagination.module.scss';
 
-const Pagination = ({ beersPerPage, totalBeers, paginate, nextPage, prevPage, isNext, isPrev }) => {
+const Pagination = ({ beersPerPage, totalBeers, nextPage, prevPage, isNext, isPrev }) => {
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalBeers / beersPerPage); i++) {
