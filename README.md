@@ -6,7 +6,7 @@
 
 ***
 
-## 🌐 You can try demo <a href='https://punk-beer-navy.vercel.app/' target="_blank"/>here</a>
+## 🌐 You can try demo <a href='https://ilyaozhereliev.github.io/Punk-beer/' target="_blank"/>here</a>
 
 ***
 
